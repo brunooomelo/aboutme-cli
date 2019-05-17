@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "A CLI that helps you to know the social networks of a person",
   "main": "index.js",
-  "repository": "https://github.com/brunooomelo/aboutme-cli",
   "author": "Bruno Melo <utibmelo@gmail.com>",
   "license": "MIT",
   "dependencies": {
@@ -19,7 +18,15 @@
     "aboutme",
     "aboutme-cli"
   ],
-  "bin":{
+  "bin": {
     "aboutme": "index.js"
+  },
+  "homepage": "https://github.com/brunooomelo/lottery#README.md",
+  "bugs": {
+    "url": "https://github.com/brunooomelo/aboutme-cli/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunooomelo/aboutme-cli/.git"
   }
 }
