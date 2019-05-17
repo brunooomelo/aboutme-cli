@@ -1,5 +1,5 @@
 {
-  "name": "aboutme",
+  "name": "aboutme-cli",
   "version": "1.0.0",
   "description": "A CLI that helps you to know the social networks of a person",
   "main": "index.js",
