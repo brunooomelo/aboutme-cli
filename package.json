@@ -1,6 +1,6 @@
 {
   "name": "aboutme-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A CLI that helps you to know the social networks of a person",
   "main": "index.js",
   "author": "Bruno Melo <utibmelo@gmail.com>",

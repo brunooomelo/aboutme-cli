@@ -43,6 +43,10 @@ const run = async (cli) => {
 
     spinner.stop()
 
+    if (!find) {
+      return console.log(`[!] username not have a info`)
+    }
+
     let hasFile
     hasFile = Object.keys(find.files).find(item => item.match(/about/))
 
@@ -51,10 +55,6 @@ const run = async (cli) => {
         return console.log('[!] dont have a file credencials')
       }
       hasFile = Object.keys(find.files)[0]
-    }
-
-    if (!find) {
-      return console.log(`[!] username not have a info`)
     }
 
     const { data: result } = await axios.get(find.files[hasFile].raw_url)
