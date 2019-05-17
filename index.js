@@ -9,6 +9,7 @@ const profile = require('./profile')
 const cli = meow(`
   Usage:
       $ aboutme <username>     Show username and social network information
+
   Options:
       -h, --help            Show help options
       -v, --version         Show version
