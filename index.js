@@ -44,7 +44,7 @@ const run = async (cli) => {
     spinner.stop()
 
     if (!find) {
-      return console.log(`[!] username not have a info`)
+      return console.log(`${red('[!]')} ${bold('username not have a info')}`)
     }
 
     let hasFile
@@ -52,7 +52,7 @@ const run = async (cli) => {
 
     if (!hasFile) {
       if (Object.keys(find.files).length <= 0) {
-        return console.log('[!] dont have a file credencials')
+        return console.log(`${red('[!]')} ${bold('dont have a file credencials')}`)
       }
       hasFile = Object.keys(find.files)[0]
     }
@@ -73,9 +73,11 @@ const run = async (cli) => {
     }
   } catch (error) {
     spinner.stop()
-    console.log(error)
+    if(error.response.status === 404) {
+      return  console.log(`  ${red('[!]')} ${bold(error.response.data.message)}`)
+    }
     if (error.response.status == 403) {
-      return console.log(`  [${bold('!')}] ${red(error.response.data.message)}`)
+      return console.log(`  ${red('[!]')} ${bold(error.response.data.message)}`)
     }
     return console.log(error.response)
   }
