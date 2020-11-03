@@ -1,7 +1,9 @@
 # ABOUTME CLI
 
+![demonstrative image](./logo.png)
 
 > A CLI that helps you to know the social networks of a person.
+
 
 ### Installing
 
